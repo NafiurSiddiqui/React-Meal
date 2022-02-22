@@ -1,0 +1,1 @@
+store folder is a react convention of storing data that is application wide used.
