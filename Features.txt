@@ -4,3 +4,4 @@ useRef
 useContext
 useState
 button animation
+Reducer

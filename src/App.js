@@ -5,26 +5,26 @@ import React, { useState } from 'react';
 import CartProvider from './store/CartProvider';
 
 function App() {
- //we r using state here, because, the modal has two state, one where it is shown and other where it is not shown
- const [cartIsShown, setCartIsShown] = useState(false);
+	//we r using state here, because, the modal has two state, one where it is shown and other where it is not shown
+	const [cartIsShown, setCartIsShown] = useState(false);
 
- const showCartHandler = () => {
-  setCartIsShown(true);
- };
+	const showCartHandler = () => {
+		setCartIsShown(true);
+	};
 
- const hideCartHandler = () => {
-  setCartIsShown(false);
- };
+	const hideCartHandler = () => {
+		setCartIsShown(false);
+	};
 
- return (
-  <CartProvider>
-   {cartIsShown && <Cart onClose={hideCartHandler} />}
-   <Header onShowCart={showCartHandler} />
-   <main>
-    <Meals />
-   </main>
-  </CartProvider>
- );
+	return (
+		<CartProvider>
+			{cartIsShown && <Cart onClose={hideCartHandler} />}
+			<Header onShowCart={showCartHandler} />
+			<main>
+				<Meals />
+			</main>
+		</CartProvider>
+	);
 }
 
 export default App;
