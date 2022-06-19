@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import CartProvider from './store/CartProvider';
 
 function App() {
-	//we r using state here, because, the modal has two state, one where it is shown and other where it is not shown
+	//State for model
 	const [cartIsShown, setCartIsShown] = useState(false);
 
 	const showCartHandler = () => {
